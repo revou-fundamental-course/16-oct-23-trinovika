@@ -1,0 +1,110 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 2em;
+    border-bottom: 1px solid darkslategray;
+}
+
+.nav-logo img {
+    max-height: 50px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.nav-item {
+    padding: 2px 1em;
+    border: 0.5px solid black;
+    min-width: 60px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:hover {
+    background: black;
+    color: white;
+}
+
+.greetings {
+    padding-top: 2em;
+    padding: 5em;
+}
+
+.banner {
+    border-bottom: 1px solid black;
+    background-image: url('../assets/BG1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.headquarters {
+    padding: 3em;
+    border-bottom: 1px solid black;
+}
+
+.headquarters p {
+    margin-top: 10em;
+    text-align: center;
+    
+}
+.hq-items {
+    padding: 2em 5em;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.circle {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.form {
+    
+    padding: 1em 3em;
+    border-bottom: 1px solid black;
+}
+
+input[type=text],
+input[type=date],
+textarea {
+    width: 200%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=submit]{
+    align-items: center;
+}
+
+#message-us {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.form-right{
+    padding : 12px;
+    height: 200px;
+    width: 500px;
+    border: 1px solid rgb(170, 167, 167);
+}
+.frm-input{
+    width: 750px;
+}
+
+
+.footer-text {
+    color: blue;
+    font-size: small;
+    
+}

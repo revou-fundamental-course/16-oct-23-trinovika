@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header id="home" class="header">
+       <div class="nav-logo">
+            <img src="./assets/revou-logo.png" alt="revou-logo">
+       </div> 
+       <div class="navigation">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#profile" class="nav-item">Our Profile</a>
+            <a href="#portofolio" class="nav-item">Portofolio</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+       </div>
+    </header>
+    
+    <section id="profile" class="banner">
+        <div class="greetings">
+            <h1>Hallo <span id="name">Your Name</span> Welcome to My Website</h1>
+            <p>Ini adalah latihan website pertama</p>
+            <p>
+                <button id="ChangeName">Ganti Nama</button>
+            </p>
+        </div>
+        
+    </section>
+
+    <section id="portofolio" class="headquarters">
+        <h1>Our Headquarters</h1>
+        <div class="hq-items">
+            <div class ="circle">
+                <p>Jakarta</p>
+            </div>
+            <div class ="circle">
+                <p>Bandung</p>
+            </div>
+            <div class ="circle">
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="message-us" class="form">
+            <div class="form-left">
+            <h1>Message Us</h1>
+            <form class="frm-input" name="message-form" onsubmit="return validateForm()">
+                <table class="form-container">
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input id="nama" name="nama" type="text" placeholder="Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input id="date" name="date" type="date" placeholder="Date"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td><input id="male" name="gender" type="radio" value="Laki-laki">
+                            <label for="male">Laki-laki</label>
+                            <input id="female" name="gender" type="radio" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td><textarea name="Pesan" id="Pesan" cols="30" rows="10" placeholder="Pesan"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input  id="submit" type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="form-right">
+            <p>Current Time  : <span id="time-result"></span></p></p>
+            <p>Nama          : <span id="nama-result"></span></p>
+            <p>Tanggal lahir : <span id="tanggallahir-result"></span></p>
+            <p>Jenis Kelamin : <span id="jeniskelamin-result"></span></p>
+            <p>Pesan         : <span id="pesan-result"></span></p>
+        </div>    
+    </section>
+
+    <footer class="footer">
+        <center>
+            <p class="footer-text">made by Vika</p>
+        </center>
+
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
